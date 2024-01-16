@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h2>Ejercicio 1</h2>
+    <form method="post" action="{{ url_for('ejercicio1') }}">
+        <label for="nota1">Nota 1:</label><br>
+        <input type="number" name="nota1" min="10" max="70" required><br>
+
+        <label for="nota2">Nota 2:</label><br>
+        <input type="number" name="nota2" min="10" max="70" required><br>
+
+        <label for="nota3">Nota 3:</label><br>
+        <input type="number" name="nota3" min="10" max="70" required><br>
+
+        <label for="asistencia">Asistencia:</label><br>
+        <input type="number" name="asistencia" min="0" max="100" required><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
